@@ -42,11 +42,55 @@ html {
   overflow-x: hidden;
 }
 
+/* MODO ESCURO COM CONTRASTE SUTIL */
 body.dark {
-  --light: #181a1e;
-  --grey: #25252c;
-  --dark: #fbfbfb;
+  /* Cores principais */
+  --light: #25272e;       /* Container/Cards (mais claro) */
+  --grey: #1a1c22;        /* Fundo da página (mais escuro) */
+  --dark: #e4e6eb;        /* Texto principal */
+  --dark-grey: #3e4046;   /* Bordas discretas */
+
+  /* Ajuste de contraste */
+  --contrast-5: rgba(255,255,255,0.05);
+  --contrast-10: rgba(255,255,255,0.1);
 }
+
+/* FUNDO GERAL */
+body.dark {
+  background-color: var(--grey); /* Cor mais escura */
+}
+
+/* CONTAINERS PRINCIPAIS */
+body.dark .content main .bottom-data > div,
+body.dark .content main .insights li,
+body.dark .config-container,
+body.dark .card-colaborador {
+  background-color: var(--light); /* 10% mais claro que o fundo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* BARRA LATERAL E SUPERIOR */
+body.dark .sidebar,
+body.dark .content nav {
+  background-color: var(--light);
+}
+
+/* HOVER E EFEITOS */
+body.dark .content main .bottom-data .orders table tr:hover {
+  background-color: var(--contrast-5);
+}
+
+/* BORDAS DISCRETAS (OPCIONAL) */
+body.dark .content main .bottom-data > div,
+body.dark .content main .insights li {
+  border: 1px solid var(--contrast-10);
+}
+
+body {
+  background: var(--grey);
+  overflow-x: hidden;
+}
+
 
 body {
   background: var(--grey);

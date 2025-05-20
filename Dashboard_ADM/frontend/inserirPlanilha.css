@@ -190,4 +190,58 @@ body {
 }
 
 
+/* ESTILOS PARA UPLOAD DE PLANILHA - MODO ESCURO */
+body.dark .upload-container {
+  background: var(--light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
+body.dark .upload-container h1 {
+  color: var(--dark);
+}
+
+body.dark .upload-container p {
+  color: #a1a1aa;
+}
+
+body.dark .file-input-label {
+  background: #2563eb; /* Mantendo o azul para contraste */
+}
+
+body.dark .file-input-label:hover {
+  background: #1d4ed8;
+}
+
+body.dark #fileName {
+  color: #d1d5db;
+  background: var(--dark-grey);
+}
+
+body.dark #processButton {
+  background: #16a34a; /* Mantendo o verde para contraste */
+}
+
+body.dark #processButton:hover {
+  background: #15803d;
+}
+
+body.dark #processButton:disabled {
+  background: #4b5563;
+}
+
+body.dark .upload-success {
+  background: #166534;
+  color: #dcfce7;
+  border: 1px solid #14532d;
+}
+
+body.dark .upload-error {
+  background: #991b1b;
+  color: #fee2e2;
+  border: 1px solid #7f1d1d;
+}
+
+body.dark #output {
+  background: var(--light);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}

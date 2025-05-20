@@ -50,3 +50,14 @@ SELECT
   descricaoLocalizacaoAtribuida as local,
   confirmada as status
 FROM atividades;
+
+
+
+
+
+
+
+
+
+
+
